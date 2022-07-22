@@ -45,8 +45,8 @@ export default function projectLists() {
                 </Thead>
                 <Tbody>
                     {
-                        projects.map(project => (
-                            <Tr>
+                        projects.map((project, index) => (
+                            <Tr key={index}>
                                 <Td>{project.name}</Td>
                                 <Td>{project.date}</Td>
                                 <Td>{project.status}</Td>
